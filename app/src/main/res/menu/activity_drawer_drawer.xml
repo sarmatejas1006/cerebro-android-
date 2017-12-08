@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_learner"
+            android:icon="@drawable/ic_help_outline_black_48dp"
+            android:title="Learner View" />
+        <item
+            android:id="@+id/nav_tutor"
+            android:icon="@drawable/ic_supervisor_account_black_48dp"
+            android:title="Tutor View" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_settings_black_48dp"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_star_48pt_3x"
+            android:title="Rate Tutor" />
+    </group>
+
+    <item android:title="Account Options">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_power_settings_new_black_48dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

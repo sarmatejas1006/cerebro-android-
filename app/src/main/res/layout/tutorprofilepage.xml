@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hci.project.cerebro.TutorProfilePage">
+
+    <TextView
+        android:id="@+id/tutor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Name of Tutor"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyle"
+        android:numStars="5"
+        android:layout_marginBottom="20dp"
+        android:stepSize="0.1"
+        android:isIndicator="true" />
+
+    <TextView
+        android:id="@+id/skill_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="I can help you with questions on"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/slot1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white"
+            android:text="09:00 \n to \n 10:00" />
+
+        <Button
+            android:id="@+id/slot2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_style"
+            android:text="10:00 \n to \n 11:00"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/slot3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@drawable/button_style"
+            android:text="11:00 \n to \n 12:00"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_chosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="I'd like to request to help me from: \n [Select one of the times] \n \n"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/request"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:text="Send Request \u25b6"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
